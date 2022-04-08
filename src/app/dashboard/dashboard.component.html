@@ -1,0 +1,17 @@
+<div class="top-heading">
+  <span class="material-icons top-icon">
+    military_tech
+    </span>
+  <h2>Top Heroes</h2>
+  <span class="material-icons top-icon">
+    military_tech
+    </span>
+</div>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+  routerLink="/detail/{{hero.id}}">
+  <span class="material-icons hero-icon-dash">star</span>
+  <h3 class="hero-name-dash">{{hero.name}}</h3>
+</a>
+</div>
+<app-hero-search></app-hero-search>

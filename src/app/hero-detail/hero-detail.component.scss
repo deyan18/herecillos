@@ -1,0 +1,165 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+  color: #435960;
+  font-weight: bold;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+  width: 100px;
+    border: 2px solid #c7c7c7;
+    border-radius: 10px;
+
+}
+.custom-button {
+  margin-top: 10px;
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 10px;
+}
+.custom-button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+.back-heading{
+  display: flex;
+  justify-content: center;
+}
+
+.details-heading{
+  display: flex;
+  justify-content: center;
+
+  background-color: #468faf48;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.details-icon{
+  font-size: 8em;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0px;
+  align-self: center;
+  font-size: 2em;
+  justify-content: left;
+
+}
+
+.hero-info{
+  margin-top: 20px;
+  align-self: center;
+}
+
+.hero-id-edit{
+  display: flex;
+  justify-content: left;
+
+
+}
+
+.edit-name{
+
+  align-self: center;
+}
+
+label {
+  display:block;
+}
+
+
+
+
+.id-hero{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-right: 10px;
+
+}
+
+h3 {
+  margin: 0px;
+}
+
+.id-label{
+  font-weight: bolder;
+}
+.sp-heading{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin: 20px;
+}
+.sp-icon{
+  font-size: 3em;
+
+}
+.superpowers li {
+  position: relative;
+  cursor: pointer;
+}
+.superpowers{
+
+  list-style-type: none;
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.superpowers button {
+
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  background-color: #61a5c2;
+
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.superpowers button:hover {
+  background-color: #013a63;
+
+}
+
+.superpowers button:active {
+  background-color: #013a63;
+
+}
+
+.sp-field{
+
+text-align: center;
+}
+
+.hero-img{
+  object-fit: cover;
+  width:230px;
+  height:230px;
+  border-radius: 30px;
+  padding-right: 10px;
+}

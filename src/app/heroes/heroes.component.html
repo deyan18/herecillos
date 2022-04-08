@@ -1,0 +1,35 @@
+<div class="myheroes-heading">
+  <span class="material-icons myheroes-icon">
+    groups
+    </span>
+  <h2>My Heroes</h2>
+  <span class="material-icons myheroes-icon">
+    groups
+    </span>
+</div>
+<ul class="heroes" *ngIf="!addHero">
+  <li *ngFor="let hero of heroes" class="heroes-list">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="material-icons hero-icon-myheroes">person</span>
+      {{hero.name}}
+
+    </a>
+
+  </li>
+  <button  class="material-icons" type="button" (click)="addHero = true">add</button>
+</ul>
+<div class="h-field" *ngIf="addHero">
+  <label for="hero-name">New hero: </label>
+  <input
+    id="hero-name"
+    [(ngModel)]="newHero"
+    placeholder="Hero"
+  />
+  <button
+    class="custom-button"
+    type="button"
+    (click)="add(newHero); newHero = ''; addHero = false"
+  >
+    Add
+  </button>
+</div>

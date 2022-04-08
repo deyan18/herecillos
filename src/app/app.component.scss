@@ -1,0 +1,64 @@
+/* AppComponent's private CSS styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  margin-top: 0px;
+}
+
+.body-text {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  min-height: 11vh;
+  background-color: #468faf23;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 23px;
+  font-weight: bolder;
+  padding-top: 8px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover {
+  background-color: #468faf;
+  color: white;
+}
+
+
+

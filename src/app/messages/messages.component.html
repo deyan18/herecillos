@@ -1,0 +1,14 @@
+
+<div *ngIf="messageService.messages.length" class="messages">
+
+  <div class="heading-messages">
+
+      <h2>Messages</h2>
+
+      <button type="button" class="material-icons trash"
+            (click)="messageService.clear()">delete_forever</button>
+  </div>
+
+  <div *ngFor='let message of messageService.messages' class="message-element"> {{message}} </div>
+
+</div>

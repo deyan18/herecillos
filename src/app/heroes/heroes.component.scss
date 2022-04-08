@@ -1,0 +1,111 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+
+  list-style-type: none;
+  margin-top: 40px;
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+h2 {
+  text-align: center;
+  margin: 0px;
+  align-self: center;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.hero-icon-myheroes{
+  font-size: 2em;
+}
+
+.myheroes-icon{
+  font-size: 3em;
+
+}
+
+
+.myheroes-heading{
+  display: flex;
+  justify-content: center;
+}
+
+.heroes li {
+  position: relative;
+  cursor: pointer;
+}
+
+.heroes {
+  align-items: center;
+}
+
+.heroes a, button {
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #61a5c2;
+  margin: .5em;
+  padding: 30px;
+
+  border-radius: 10px;
+  display: flex;
+
+}
+
+.heroes a:hover, button:hover {
+  background-color: #013a63;
+
+}
+
+.heroes a:active, button:hover {
+  background-color: #013a63;
+
+}
+
+
+
+.custom-button {
+  display: flexbox;
+  color: black;
+  margin-top: 10px;
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 10px;
+}
+.custom-button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+label {
+  display: flex;
+  align-items: center;
+  color: #435960;
+  font-weight: bold;
+}
+input {
+  display: flexbox;
+  font-size: 1em;
+  padding: .5rem;
+  width: 100px;
+    border: 2px solid #c7c7c7;
+    border-radius: 10px;
+
+}
+
+.h-field{
+
+  text-align: center;
+  }

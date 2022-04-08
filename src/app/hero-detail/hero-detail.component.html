@@ -1,0 +1,95 @@
+<div *ngIf="hero">
+  <div class="back-heading">
+
+    <button   class="material-icons" type="button" (click)="goBack()">arrow_back_ios</button>
+
+  <div class="details-heading">
+    <img [src]="heroImage" class="hero-img" alt="">
+    <!-- <span class="material-icons details-icon"> badge </span> -->
+    <div class="hero-info">
+      <h2 *ngIf="editName == false">{{ hero.name | uppercase }}</h2>
+      <div *ngIf="editName == true">
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
+        <button class="custom-button" type="button" (click)="editName = false; save()">
+          Done
+        </button>
+      </div>
+
+      <div class="hero-id-edit">
+        <div class="id-hero">
+          <h3 class="id-label">ID:</h3>
+          <div>{{ hero.id }}</div>
+        </div>
+        <button
+          *ngIf="editName == false"
+          type="button"
+          (click)="editName = true"
+          class="material-icons edit-name"
+        >
+          edit_note
+        </button>
+        <button
+          *ngIf="editName == false"
+          type="button"
+          (click)="delete(hero)"
+          class="material-icons edit-name"
+        >
+          delete_forever
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sp-heading">
+    <span class="material-icons sp-icon"> bolt </span>
+    <h2>Superpowers</h2>
+    <span class="material-icons sp-icon"> bolt </span>
+  </div>
+  <ul class="superpowers" *ngIf="!addSuperpower && selectedSuperpower == -1">
+    <li
+      class="sp-list"
+      *ngFor="let superpower of hero.superpowers; let i = index"
+      [attr.data-index]="i"
+    >
+      <button type="button" (click)="selectedSuperpower = i;">
+        {{ superpower.name }}
+      </button>
+    </li>
+    <button   class="material-icons" type="button" (click)="addSuperpower = true">add</button>
+  </ul>
+  <div class="sp-field">
+    <div class="sp-field" *ngIf="selectedSuperpower != -1">
+      <label for="superpower-name">Edit superpower: </label>
+      <input
+        id="superpower-name"
+        [(ngModel)]="hero.superpowers[selectedSuperpower].name"
+        placeholder="Superpower"
+      />
+      <button
+        class="custom-button"
+        type="button"
+        (click)="save();selectedSuperpower = -1"
+      >
+        Done
+      </button>
+    </div>
+    <div class="sp-field" *ngIf="addSuperpower">
+      <label for="superpower-name">New superpower: </label>
+      <input
+        id="superpower-name"
+        [(ngModel)]="newSuperpower"
+        placeholder="Superpower"
+      />
+      <button
+        class="custom-button"
+        type="button"
+        (click)="addNewSuperpower(); addSuperpower = false; newSuperpower = ''"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
